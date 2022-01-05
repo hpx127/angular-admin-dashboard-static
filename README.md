@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# SIGN-UP PAGE
+Using template-drive-form for making sign up page wiht validation. and creat login page so users are authrize or.
+
+# UPDATE & DELETE PRODUCT
+Inside this folder making update and delete static product code.
