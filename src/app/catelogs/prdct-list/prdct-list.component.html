@@ -1,0 +1,67 @@
+<div id="page-wrapper" >
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-lg-12 space-box">
+                <div class="col-md-12">
+                    <h2>Product List :</h2>
+                   </div>
+                <table border="2">
+                    <tr border="2">
+                        
+                        <th>
+                            <h4>NO.</h4>
+                        </th>
+                        <th>
+                            <h4>PRODUCT  :</h4>
+                        </th>
+                        <th>
+                            <h4>CATEGORY :</h4>
+                        </th>
+                        <th>
+                            <h4>SKU-ID</h4>
+                        </th>
+                        <th>
+                            <h4>STOCK :</h4>
+                        </th>
+                        <th>
+                            <h4>PRICE :</h4>
+                        </th>
+                        <th>
+                            <h4>IMAGES'S :</h4>
+                        </th>
+                       
+
+                    </tr>
+
+                    <tr border="2" *ngFor="let k of list1;let i=index;">
+                        <td>
+                            {{i+1}}
+                        </td>
+
+                        <td>{{k.product1}}</td>
+                        <td>{{k.cate1}}</td>
+                        <td>{{k.sku1}}</td>
+                        <td>{{k.stock1}}</td>
+                        <td>Rs.{{k.price1}}/-</td>
+                        <td>
+                            <img src="{{imageSrc}}{{k.image1}}" style="height: 100px;width: 100px;">
+                        </td>
+                        <!-- <td>
+                            <button class="btn-1" name="button" type="button">Change</button>
+                            <button class="btn-2" name="button" type="button">Remove</button>
+                        </td> -->
+
+                        
+                     </tr>   
+                   
+                </table>
+            </div>
+
+                <div class="mrg-top-1"> 
+                <a routerLink="/catelogs/prdct-chg" class="btn-0">ADD New Product</a>
+                </div>
+
+                
+         </div>
+     </div>
+</div>

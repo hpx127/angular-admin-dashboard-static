@@ -1,0 +1,104 @@
+<div id="page-wrapper" >
+    <div id="page-inner">
+        <div class="row">
+
+            <div class="col-lg-12">
+
+            <div class="col-md-12">
+             <h2>Product Details :</h2>
+            </div>
+            <div class="col-md-6 bgm-color">
+
+             <form #uu="ngForm" enctype="multipart/form-data" (submit)="adddata(uu)">   
+                <div class="mb-4">
+                    <label class="form-lable">PRODUCT NAME : </label>
+                    <input class="form-inpt" type="text"  placeholder="enter product name" name="product1" [(ngModel)]="data.product1" />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">CATEGORY : </label>
+                    <input class="form-inpt" type="text" placeholder="enter category" name="cate1" [(ngModel)]="data.cate1"/>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">SKU ID : </label>
+                    <input class="form-inpt" type="text" placeholder="enter sku id" name="sku1" [(ngModel)]="data.sku1"/>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">ENTER STOCK QUANTITY : </label>
+                    <input class="form-inpt" type="text" placeholder="enter stock"name="stock1"  [(ngModel)]="data.stock1"/>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">PRICE : </label>
+                    <input class="form-inpt" type="text" placeholder="enter price" name="price1" [(ngModel)]="data.price1"/>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">Add images: </label>
+                    <input class="input-file" type="file" placeholder="enter iamges" name="image1"  (change)='onFileChange($event)'>
+                </div>
+
+                  <div class="mb-4 mrg-top-2"> 
+                    <input type="submit" value="{{btn}}" />
+                    </div>
+
+             </form>     
+                
+            </div>
+
+            </div>
+
+
+            <table border="2">
+                <tr border="2">
+                    
+                    <th>
+                        <h4>NO.</h4>
+                    </th>
+                    <th>
+                        <h4>PRODUCT  :</h4>
+                    </th>
+                    <th>
+                        <h4>CATEGORY :</h4>
+                    </th>
+                    <th>
+                        <h4>SKU-ID</h4>
+                    </th>
+                    <th>
+                        <h4>STOCK :</h4>
+                    </th>
+                    <th>
+                        <h4>PRICE :</h4>
+                    </th>
+                    <th>
+                        <h4>IMAGES'S :</h4>
+                    </th>
+                   
+
+                </tr>
+
+                <tr border="2" *ngFor="let k of lis;let i=index;">
+                    <td>
+                        {{i+1}}
+                    </td>
+
+                    <td>{{k.product1}}</td>
+                    <td>{{k.cate1}}</td>
+                    <td>{{k.sku1}}</td>
+                    <td>{{k.stock1}}</td>
+                    <td>Rs.{{k.price1}}/-</td>
+                    <td>{{k.image1}}</td>
+                    <td>
+                        <input type="button" value="Update" (click)="updateData(k,i)"  />
+                        <input type="button" value="Delete" (click)="deleteData(i)" />
+                    </td>
+
+                    
+                 </tr>   
+               
+            </table>
+         </div>   
+    </div>
+</div>    

@@ -1,0 +1,52 @@
+
+
+<div id="page-wrapper" >
+    <div id="page-inner">
+        <div class="row">
+
+            <div class="col-lg-12">
+
+            <div class="col-md-12">
+             <h2>FORGET PASSWORD :</h2>
+            </div>
+            <div class="col-md-6 bgm-color">
+
+             <form #fp="ngForm" (submit)="fogpswd()">    
+               
+
+                <div class="mb-4">
+                    <label class="form-lable">Last Password : </label>
+                    <input class="form-inpt" type="password" placeholder="enter last password"/>
+                </div>
+
+                
+
+                <div class="mb-4">
+                    <label class="form-lable">Enter Email : </label>
+                    <input class="form-inpt" type="email" placeholder="enter your email" name="email1" [(ngModel)]="rdata.email1"/>
+
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">Mobile Number : </label>
+                    <input class="form-inpt" type="number" placeholder="enter mobile number" name="number1" [(ngModel)]="rdata.number1"/>
+
+                </div>
+
+                
+
+                  <div class="mb-4 mrg-top-2"> 
+                    <button type="submit">Submit</button>
+                    </div>
+
+             </form>     
+                
+            </div>
+
+            </div>
+
+
+           
+         </div>   
+    </div>
+</div>   

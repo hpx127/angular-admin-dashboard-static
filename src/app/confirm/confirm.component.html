@@ -1,0 +1,39 @@
+
+<div id="page-wrapper" >
+    <div id="page-inner">
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2>CREATE RE-PASSWORD :</h2>
+            </div>
+               <div class="col-md-6 bgm-color">
+                 
+                <form #cc="ngForm"  (submit)="conForm(cc)">
+
+                    <div class="mb-4">
+                        <label class="form-lable">Enter email  : </label>
+                        <input class="form-inpt" type="email" name="email1" [(ngModel)]="cdata.email1" placeholder="enter your email"/>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-lable">Enter New Password : </label>
+                        <input class="form-inpt" type="password" name="pwd1" [(ngModel)]="cdata.pwd1" placeholder="enter new password"/>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-lable">Confirm New Password : </label>
+                        <input class="form-inpt" type="password" placeholder="enter confirm password"/>
+                    </div>
+
+                    <div class="mb-4 mrg-top-2"> 
+                        <button type="submit">Submit</button>
+                    </div>
+
+
+                </form>
+
+               </div>
+   
+        </div>
+    </div>
+</div>            

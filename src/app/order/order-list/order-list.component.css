@@ -1,0 +1,27 @@
+.space-box
+{
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.space-box tr th,.space-box tr td{
+    padding:5px 10px 5px 10px;
+}
+.space-box tr th h4{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.space-box tr td p{
+  font-weight: 100;
+  text-align: center;
+}
+
+.space-box tr th
+{
+    background-color: orange;
+}
+
+.space-box tr td
+{
+    background-color:darkgray;
+}

@@ -1,0 +1,83 @@
+.space-box
+{
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.space-box tr th,.space-box tr td{
+    padding:10px 15px 10px 15px;
+}
+.space-box tr th h4{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.space-box tr td p{
+  font-weight: 100;
+  text-align: center;
+}
+
+.space-box tr td img{
+    padding-top: 15px;
+}
+
+
+.btn-0{
+    
+    text-decoration: none;
+    padding: 10px;
+    background-color:lightblue;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5%;
+
+}
+
+.mrg-top-1{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.btn-0:hover{
+    background-color: springgreen;
+}
+.btn-2{
+    display: block;
+    padding:5px;
+    background-color:khaki;
+    margin-top: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10%;
+
+}
+.btn-1{
+    display: block;
+    padding:5px;
+    background-color:lightsalmon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10%;
+
+}
+
+.btn-1:hover{
+    background-color: springgreen;
+}
+
+
+.btn-2:hover{
+    background-color: springgreen;
+}
+
+.img-rgt
+{
+    float: right !important;
+    padding-left: 30px;
+}
+.space-box tr th
+{
+    background-color: orange;
+}
+
+.space-box tr td
+{
+    background-color:darkgray;
+}

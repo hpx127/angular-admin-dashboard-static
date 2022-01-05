@@ -1,0 +1,47 @@
+
+
+.mb-4{
+    margin-bottom: 20px;
+    
+}
+
+.bgm-color{
+    background-color:silver;
+    padding-top: 30px;
+    border-radius: 2%;
+    border:2px solid grey;
+}
+
+.form-lable{
+    margin-bottom: 10px;
+    border-radius: 2%;
+    background-color:powderblue;
+    padding: 10px 40px 10px 10px;
+    display: block;
+}
+
+.form-inpt{
+    display: block;
+    padding-right: 100px;
+}
+
+
+.btn-00{
+    
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color:lightblue;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5%;
+
+}
+
+.mrg-top-2{
+    margin-top: 20px;
+
+}
+
+.btn-00:hover{
+    background-color: springgreen;
+}

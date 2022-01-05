@@ -1,0 +1,69 @@
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">SHOP'S WERE</a> 
+        </div>
+<div style="color: white;
+padding: 15px 50px 5px 50px;
+float: right;
+font-size: 16px;"><a routerLink="login" class="btn btn-danger square-btn-adjust">Login</a><span>&nbsp;&nbsp;</span><a routerLink="regi" class="btn btn-danger square-btn-adjust">Registration</a> </div>
+    </nav>   
+       <!-- /. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+            <li class="text-center">
+                <img src="assets/img/ch-tshirt.jpg" class="user-image img-responsive"/>
+                </li>
+            
+                
+                <li>
+                    <a class="active-menu"  routerLink=""><i class="fa fa-dashboard fa-2x"></i> Dashboard</a>
+                </li>
+
+
+                 <li>
+                    <a  href="ui.html"><i class="fa fa-inbox fa-2x"></i>Cateloges<span class="fa arrow"></span></a>
+
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a routerLink="catelogs/prdct-list">Product List</a>
+                        </li>
+                        <li>
+                            <a routerLink="catelogs/prdct-chg">Product</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a  ><i class="fa fa-list fa-2x"></i>Orders<span class="fa arrow"></span></a>
+
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a routerLink="order/order-list">Order List</a>
+                        </li>
+                        <li>
+                            <a href="#">Last Order</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+
+           
+            	
+            </ul>
+           
+        </div>
+        
+    </nav>  
+
+    <router-outlet routerLink=""></router-outlet>

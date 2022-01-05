@@ -1,0 +1,12 @@
+.gg{
+    margin-top: 100px;
+    text-align: center;
+}
+
+input.ng-invalid.ng-touched{
+    border:1px solid red;
+}
+input.ng-touched.ng-valid{
+    border:1px solid green;
+}
+

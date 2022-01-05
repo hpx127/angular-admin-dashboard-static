@@ -1,0 +1,66 @@
+
+
+
+<div id="page-wrapper" >
+    <div id="page-inner">
+        <div class="row">
+
+            <div class="col-lg-12">
+
+            <div class="col-md-12">
+             <h2>Registartion form:</h2>
+            </div>
+            <div class="col-md-6 bgm-color">
+
+             <form #rr="ngForm" (submit)="rr.form.valid && adrdata(rr)">    
+                <div class="mb-4">
+                    <label class="form-lable">Name</label>
+                    <input class="form-inpt"  required #name1="ngModel" type="text"  placeholder="enter name" name="name1" [(ngModel)]="rdata.name1"/>
+                    <br>
+                    <span *ngIf="name1.touched && name1.invalid" style="color: red;">Please enter name</span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">Email : </label>
+                    <input class="form-inpt" required  #email1="ngModel" type="email" placeholder="enter email" name="email1" [(ngModel)]="rdata.email1"/>
+                    <br>
+                    <span *ngIf="email1.touched && email1.invalid">*PLease enter the valide email</span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">Number: </label>
+                    <input class="form-inpt" required type="number" placeholder="enter mo.number" name="number1" [(ngModel)]="rdata.number1"/>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">Password : </label>
+                    <input class="form-inpt" required pwd1 ngModel #pwd1="ngModel" type="password" placeholder="enter password" name="pwd1" [(ngModel)]="rdata.pwd1" />
+                    <br>
+                    <span *ngIf="pwd1.touched && !pwd1.valid">*PLease enter the valide password</span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-lable">Confirm Password : </label>
+                    <input class="form-inpt"  type="password" pattern="{{rdata.pwd1}}" #cpass="ngModel" placeholder="enter confirm password" name="confrpwd" [(ngModel)]="confrpwd" required/>
+                    <br>
+                    <span *ngIf=" rr.submitted && cpass.errors?.pattern" style="color:maroon;">password and confirm password doesnot match..oops</span>
+                    
+                </div>
+
+                
+
+                  <div class="mb-4 mrg-top-2"> 
+                    <button type="submit">Submit</button>
+                    </div>
+
+             </form>     
+                
+            </div>
+
+            </div>
+
+
+           
+         </div>   
+    </div>
+</div>      
